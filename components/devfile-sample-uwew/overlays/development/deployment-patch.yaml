@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-uwew
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0073-tenant/tkwch-fix-0075-0073-app/devfile-sample-uwew@sha256:5240ff4a309df9132e25bca27c10f74d9ae9c662f7d2fbc64b48c896827c168f
+        name: my-nodejs
+        resources: {}
+status: {}
